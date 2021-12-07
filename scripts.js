@@ -59,27 +59,26 @@ function printKey(nr) {
     case 0:
       counter++;
 
-      if (counter >= 6) {
+      if (counter >= 7) {
         counter = 1;
         text = text.toString().replace(/.$/, ".");
         document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-          text = text.toString().replace(/.$/, "?");
+        if (counter % 6 == 0) {
+          text = text.toString().replace(/.$/, "1");
           document.getElementById("userInput").value = text;
-        }
-
-        else if (counter % 4 == 0) {
-          text = text.toString().replace(/.$/, "!");
-          document.getElementById("userInput").value = text;
-        }
-
-        else if (counter % 5 == 0) {
+        }else if (counter % 5 == 0) {
           text = text.toString().replace(/.$/, "'");
           document.getElementById("userInput").value = text;
         }
-
+        else if (counter % 4 == 0) {
+          text = text.toString().replace(/.$/, "!");
+          document.getElementById("userInput").value = text;
+        }else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "?");
+          document.getElementById("userInput").value = text;
+        }
         else if (counter % 2 == 0) {
           text = text.toString().replace(/.$/, ",");
           document.getElementById("userInput").value = text;
@@ -97,15 +96,18 @@ function printKey(nr) {
     case 1:
       counter++;
 
-      if (counter >= 4) {
+      if (counter >= 5) {
           counter = 1;
           text = text.toString().replace(/.$/, "a");
           document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "c");
+        if (counter % 4 == 0) {
+            text = text.toString().replace(/.$/, "2");
             document.getElementById("userInput").value = text;
+        }else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "c");
+          document.getElementById("userInput").value = text;
         }
         else if (counter % 2 == 0) {
             text = text.toString().replace(/.$/, "b");
@@ -120,17 +122,20 @@ function printKey(nr) {
     case 2:
       counter++;
 
-      if (counter >= 4) {
+      if (counter >= 5) {
           counter = 1;
           text = text.toString().replace(/.$/, "d");
           document.getElementById("userInput").value = text;
 
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "f");
+        if (counter % 4 == 0) {
+            text = text.toString().replace(/.$/, "3");
             document.getElementById("userInput").value = text;
-        }
+        } else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "f");
+          document.getElementById("userInput").value = text;
+      }
         else if (counter % 2 == 0) {
             text = text.toString().replace(/.$/, "e");
             document.getElementById("userInput").value = text;
@@ -144,16 +149,20 @@ function printKey(nr) {
     case 3:
       counter++;
 
-      if (counter >= 4) {
+      if (counter >= 5) {
           counter = 1;
           text = text.toString().replace(/.$/, "g");
           document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "i");
+        if (counter % 4 == 0) {
+            text = text.toString().replace(/.$/, "4");
             document.getElementById("userInput").value = text;
         }
+        else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "i");
+          document.getElementById("userInput").value = text;
+      }
         else if (counter % 2 == 0) {
             text = text.toString().replace(/.$/, "h");
             document.getElementById("userInput").value = text;
@@ -167,16 +176,20 @@ function printKey(nr) {
     case 4:
       counter++;
 
-      if (counter >= 4) {
+      if (counter >= 5) {
           counter = 1;
           text = text.toString().replace(/.$/, "j");
           document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "l");
+        if (counter % 4 == 0) {
+            text = text.toString().replace(/.$/, "5");
             document.getElementById("userInput").value = text;
         }
+        else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "l");
+          document.getElementById("userInput").value = text;
+      }
         else if (counter % 2 == 0) {
             text = text.toString().replace(/.$/, "k");
             document.getElementById("userInput").value = text;
@@ -190,16 +203,20 @@ function printKey(nr) {
     case 5:
       counter++;
 
-      if (counter >= 4) {
+      if (counter >= 5) {
           counter = 1;
           text = text.toString().replace(/.$/, "m");
           document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "o");
+        if (counter % 4 == 0) {
+            text = text.toString().replace(/.$/, "6");
             document.getElementById("userInput").value = text;
         }
+        else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "o");
+          document.getElementById("userInput").value = text;
+      }
         else if (counter % 2 == 0) {
             text = text.toString().replace(/.$/, "n");
             document.getElementById("userInput").value = text;
@@ -213,16 +230,19 @@ function printKey(nr) {
     case 6:
       counter++;
 
-      if (counter >= 5) {
+      if (counter >= 6) {
           counter = 1;
           text = text.toString().replace(/.$/, "p");
           document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "r");
+        if (counter % 5 == 0) {
+            text = text.toString().replace(/.$/, "7");
             document.getElementById("userInput").value = text;
-        }
+        }else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "r");
+          document.getElementById("userInput").value = text;
+      }
 
         else if (counter % 4 == 0) {
             text = text.toString().replace(/.$/, "s");
@@ -244,16 +264,19 @@ function printKey(nr) {
     case 7:
       counter++;
 
-      if (counter >= 4) {
+      if (counter >= 5) {
           counter = 1;
           text = text.toString().replace(/.$/, "t");
           document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "v");
+        if (counter % 4 == 0) {
+            text = text.toString().replace(/.$/, "8");
             document.getElementById("userInput").value = text;
-        }
+        }else  if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "v");
+          document.getElementById("userInput").value = text;
+      }
         else if (counter % 2 == 0) {
             text = text.toString().replace(/.$/, "u");
             document.getElementById("userInput").value = text;
@@ -267,16 +290,19 @@ function printKey(nr) {
     case 8:
       counter++;
 
-      if (counter >= 5) {
+      if (counter >= 6) {
           counter = 1;
           text = text.toString().replace(/.$/, "w");
           document.getElementById("userInput").value = text;
       }
       else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/, "y");
+        if (counter % 5 == 0) {
+            text = text.toString().replace(/.$/, "9");
             document.getElementById("userInput").value = text;
-        }
+        }else if (counter % 3 == 0) {
+          text = text.toString().replace(/.$/, "y");
+          document.getElementById("userInput").value = text;
+      }
 
         else if (counter % 4 == 0) {
             text = text.toString().replace(/.$/, "z");
